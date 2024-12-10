@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSamsungNotesAddin", "SampleSamsungNotesAddin\SampleSamsungNotesAddin.csproj", "{13F81A4E-8E54-465F-A04F-5D1872E00634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSamsungNotesAddinWeb", "SampleSamsungNotesAddinWeb\SampleSamsungNotesAddinWeb.csproj", "{2FF2C471-A070-4651-B413-DBB75764F34B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F81A4E-8E54-465F-A04F-5D1872E00634}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2FF2C471-A070-4651-B413-DBB75764F34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF2C471-A070-4651-B413-DBB75764F34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF2C471-A070-4651-B413-DBB75764F34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF2C471-A070-4651-B413-DBB75764F34B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0D59DC5-ADC6-4690-9DB1-545271F9B390}
+	EndGlobalSection
+EndGlobal
