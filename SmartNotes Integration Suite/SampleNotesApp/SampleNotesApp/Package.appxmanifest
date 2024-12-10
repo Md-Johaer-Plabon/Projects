@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+         xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
+         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4"
+         xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+         xmlns:iot2="http://schemas.microsoft.com/appx/manifest/iot/windows10/2"
+         IgnorableNamespaces="uap mp uap3 uap4 rescap">
+
+  <Identity
+    Name="88ab8bf0-67c2-4914-b4f1-ccd6f06091bb"
+    Publisher="CN=plabon.j"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="88ab8bf0-67c2-4914-b4f1-ccd6f06091bb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>SampleNotesApp</DisplayName>
+    <PublisherDisplayName>plabon.j</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="SampleNotesApp.App">
+      <uap:VisualElements
+        DisplayName="SampleNotesApp"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="SampleNotesApp"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+
+      <Extensions>
+        <uap:Extension Category="windows.appService" EntryPoint="BackgroundService.Service.ApiServiceBackgroundTask">
+          <uap:AppService Name="com.apiservice"/>
+        </uap:Extension>
+      </Extensions>
+      
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
+    <rescap:Capability Name="cellularDeviceControl" />
+    <rescap:Capability Name="cellularDeviceIdentity" />
+    <rescap:Capability Name="allowElevation" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap:Capability Name="enterpriseAuthentication" />
+    <uap:Capability Name="sharedUserCertificates" />
+    <uap3:Capability Name="backgroundMediaPlayback"/>
+    <rescap:Capability Name="confirmAppClose" />
+    <rescap:Capability Name="broadFileSystemAccess" />
+    <rescap:Capability Name="extendedBackgroundTaskTime" />
+    <rescap:Capability Name="userSystemId" />
+    <rescap:Capability Name="backgroundMediaRecording" />
+    <rescap:Capability Name="smbios"/>
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="wifiControl" />
+  </Capabilities>
+</Package>
