@@ -1,2 +1,0 @@
-C:\Users\plabon.j\source\repos\SampleNotesApp\BackgroundService\BackgroundService.csproj;x64
-C:\Users\plabon.j\source\repos\SampleNotesApp\SampleNotesApp\SampleNotesApp.csproj;x64
